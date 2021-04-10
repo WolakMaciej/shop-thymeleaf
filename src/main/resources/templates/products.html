@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <link rel="stylesheet" th:href="@{/uikit.min.css}">
+    <script th:src="@{/uikit.min.js}"></script>
+    <script th:src="@{/uikit-icons.min.js}"></script>
+
+    <!--&lt;!&ndash; UIkit CSS &ndash;&gt;
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/css/uikit.min.css" />
+
+    &lt;!&ndash; UIkit JS &ndash;&gt;
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit-icons.min.js"></script>-->
+</head>
+<body>
+
+<div class="uk-navbar-container uk-background-secondary" uk-navbar>
+    <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav uk-text-large">
+            <li>
+                <a href="@{/products}">Zakupy</a>
+            </li>
+            <li>
+                <a href="@{/my-products}">Moje przedmioty</a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+            <li>
+                <a class="uk-padding-remove" href="@{/shopping-cart">
+                    <span uk-icon="icon: cart; ratio: 1.5"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="uk-badge uk-background-secondary"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="uk-container uk-margin-large-top" uk-height-viewport="expand: true" style="height: 100%">
+    <div class="uk-background-secondary uk-margin-top uk-flex uk-flex-middle uk-flex-right footer">
+        <div class="uk-margin-large-right"></div>
+        <span uk-icon="icon: facebook; ratio: 2"></span>
+        <span uk-icon="icon: twitter; ratio: 2"></span>
+        <span uk-icon="icon: instagram; ratio: 2"></span>
+    </div>
+</div>
+
+
+</body>
+</html>
