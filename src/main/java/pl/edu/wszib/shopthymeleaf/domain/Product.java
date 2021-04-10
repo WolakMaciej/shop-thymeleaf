@@ -1,5 +1,7 @@
 package pl.edu.wszib.shopthymeleaf.domain;
 
+import org.hibernate.annotations.Formula;
+
 import javax.persistence.*;
 
 @Entity
@@ -15,6 +17,16 @@ public class Product {
     private int quantity;
     @Column(length = 400)
     private String imageUrl;
+    @Formula("case when quantity > 0 then true else false end")
+    private boolean available;
+
+    public boolean isAvailable() {
+        return available;
+    }
+
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
 
     public Long getId() {
         return id;
